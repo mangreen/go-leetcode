@@ -33,3 +33,7 @@ func DFS(g map[int][]int, v map[int]bool, cur int) {
         DFS(g, v, next)
     }
 }
+/*
+Time: O(V^2)
+Space: O(V)
+*/

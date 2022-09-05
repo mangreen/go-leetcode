@@ -1,4 +1,4 @@
-# [325 - Maximum Size Subarray Sum Equals k](https://leetcode.ca/all/325.html)
+# [325. Maximum Size Subarray Sum Equals k](https://leetcode.ca/all/325.html)
 - https://medium.com/@lingyong/leetcode-325-maximum-size-subarray-sum-equals-k-ab82139eb6c4
 - https://www.cnblogs.com/grandyang/p/5336668.html
 
@@ -21,3 +21,6 @@ Output: 2 // [-1, 2]
 
 ## Follow Up:
 Can you do it in O(n) time?
+
+## Similar Question
+- 560. Subarray Sum Equals K

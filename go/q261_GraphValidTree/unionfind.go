@@ -17,6 +17,7 @@ func validTree2(n int, edges [][]int) bool {
 		roots[x] = y
 	}
 
+	// 樹的邊數量必定比節點數量少1
 	return len(edges) == n-1
 }
 

@@ -1,25 +1,27 @@
 package q325_MaximumSizeSubarraySumEqualsk
 
 func maxSubArrayLen(nums []int, k int) int {
-	sum := 0
-	ans := 0
 	m := make(map[int]int)
+	m[0] = -1
+
+	preSum := 0
+
+	maxL := 0
 
 	for i, v := range nums {
-		sum += v
+		preSum += v
 
-		if sum == k {
-			ans = i + 1
-		} else if idx, ok := m[sum-k]; ok {
-			ans = max(ans, i-idx)
+		if idx, ok := m[preSum-k]; ok {
+			maxL = max(maxL, i-idx)
 		}
 
-		if _, ok := m[sum]; !ok {
-			m[sum] = i
+		// 因為求maxSubAry, 只記錄最初的餘數idx(最左邊界)
+		if _, ok := m[preSum]; !ok {
+			m[preSum] = i
 		}
 	}
 
-	return ans
+	return maxL
 }
 
 func max(a, b int) int {
@@ -46,7 +48,7 @@ sums: [-2, -3, -1, 0]
             <-k->
         <- sum -> 
 
-ans = max(i-m[sum-k]) = 2 - (m[-1-1]) = 2-0 = 2
+ans = max(ans=0, i-m[sum-k]) = 2 - (m[-1-1]) = 2-0 = 2
 
 
 ex3.

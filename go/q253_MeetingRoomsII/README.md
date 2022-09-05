@@ -1,6 +1,10 @@
 # [253 - Meeting Rooms II](https://leetcode.ca/all/25e.html)
 - https://leetcode.ca/2016-08-09-253-Meeting-Rooms-II/
 
+## Similar 
+- 452. Minimum Number of Arrows to Burst Balloons
+
+## Description
 Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), find the minimum number of conference rooms required.
 
 Example 1:
