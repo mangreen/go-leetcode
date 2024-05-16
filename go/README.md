@@ -3,7 +3,7 @@
 go mod init {pkg}
 ```
 
-## go mod init
+## go test
 ```go
 go test -v ./...
 ```
